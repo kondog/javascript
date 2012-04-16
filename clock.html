@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>sample</title>
+    <script type = "text/javascript" >
+    function jikoku() {
+        dd = new Date();
+        document.Fl.Tl.value = dd.toLocaleString();
+        window.setTimeout("jikoku()", 1000 );
+        }
+    </script>
+</head>
+<body onload="jikoku()">
+<form name = "Fl" aciton = "#" >
+<input type = "text" name = "Tl" size = 50>
+</body>
+</html>
