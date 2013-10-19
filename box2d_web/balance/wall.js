@@ -10,7 +10,7 @@ var wallClass = enchant.Class.create({
 		drawWall: function( spriteOption ){
 			var wall = new PhyBoxSprite( this._size_x, this._size_y,
 										 spriteOption,
-										 1.0, 0.5, 0.8, true );
+										 1.0, 0.5, 0.1, true );
 			wall.image = new Surface( this._size_x, this._size_y );
 			wall.image.context.strokeRect( 0, 0, this._size_x, this._size_y );
 			wall.position = {x:this._pos_x, y:this._pos_y};
